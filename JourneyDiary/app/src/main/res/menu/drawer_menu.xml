@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_place"
+              android:icon="@drawable/ic_location_on_black_24dp"
+              android:title="Place"></item>
+        <item android:id="@+id/nav_fav"
+              android:icon="@drawable/ic_favorite_black_24dp"
+              android:title="Favorites"></item>
+        <item android:id="@+id/nav_new_journal"
+            android:title="New Journal"></item>
+        <item android:id="@+id/nav_settings"
+            android:title="Settings"></item>
+    </group>
+ 
+</menu>

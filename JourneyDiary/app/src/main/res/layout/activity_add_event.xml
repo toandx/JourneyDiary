@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.AddEventActivity">
+    <EditText
+    android:id="@+id/add_activ_edit_text"
+    android:layout_width="match_parent"
+    android:gravity="top"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@id/add_activ_image_view"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+    <ImageView
+        android:id="@+id/add_activ_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@id/add_activ_address_tv"
+        />
+    <TextView
+        android:id="@+id/add_activ_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/bot_frame"
+        />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/bot_frame"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent">
+    <ImageButton
+        android:id="@+id/add_activ_image_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background="@android:color/transparent"
+        android:tint="#03A9F4"
+        android:src="@drawable/ic_image_black_24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <ImageButton
+        android:id="@+id/add_activ_loc_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginLeft="6dp"
+        android:background="@android:color/transparent"
+        android:tint="#03A9F4"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/add_activ_image_btn"
+        />
+    <ImageButton
+        android:id="@+id/add_activ_favor_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginLeft="6dp"
+        android:background="@android:color/transparent"
+        android:tint="#03A9F4"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/add_activ_loc_btn"
+        />
+    <ImageButton
+        android:id="@+id/add_activ_restau_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:visibility="gone"
+        android:layout_marginLeft="6dp"
+        android:background="@android:color/transparent"
+        android:tint="#03A9F4"
+        android:src="@drawable/ic_restaurant_black_24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/add_activ_favor_btn"
+        />
+    <ImageButton
+        android:id="@+id/add_activ_hotel_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:visibility="gone"
+        android:layout_marginLeft="6dp"
+        android:background="@android:color/transparent"
+        android:tint="#03A9F4"
+        android:src="@drawable/ic_hotel_black_24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/add_activ_restau_btn"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_activ_add_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/bot_frame"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="#ffffff"
+    android:layout_margin="10dp"
+    android:src="@drawable/ic_done_black_24dp"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

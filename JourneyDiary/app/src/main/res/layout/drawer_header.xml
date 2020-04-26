@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03A9F4">
+        <ImageView
+            android:id="@+id/user_image"
+            android:src="@mipmap/traveloka"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:textSize="26sp"
+            android:text="Sign in"
+            android:id="@+id/nag_header_title"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            />
+ 
+    </LinearLayout>
+ 
+ 
+ 
+</RelativeLayout>
